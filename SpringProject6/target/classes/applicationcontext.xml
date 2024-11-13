@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans
+  https://www.springframework.org/schema/beans/spring-beans.xsd">
+  
+  <!-- This is setter injection byName -->
+  <!-- <bean id="trainer" class="com.kodnest.bean.Trainer"> 
+  	<property name="id" value="1"></property>
+  	<property name="name" value="Shiva"></property>
+  </bean>
+  <bean id="o1" class="com.kodnest.bean.Organization" autowire="byName"> 
+  	<property name="oname" value="Kodnest"></property>
+  	<property name="location" value="Bangalore"></property>
+  </bean> -->
+  
+  <!-- This is for byType -->
+  <!-- <bean id="trainer123" class="com.kodnest.bean.Trainer"> 
+  	<property name="id" value="1"></property>
+  	<property name="name" value="Shiva"></property>
+  </bean>
+  <bean id="o1" class="com.kodnest.bean.Organization" autowire="default"> 
+  	<property name="oname" value="Kodnest"></property>
+  	<property name="location" value="Bangalore"></property>
+  </bean> -->
+  
+  <!-- this for Constructor  -->
+  <bean id="trainer" class="com.kodnest.bean.Trainer"> 
+  	<constructor-arg  name="id" value="4"></constructor-arg>
+  	<constructor-arg  name="name" value="Shiva"></constructor-arg>
+  </bean>
+  <bean id="o1" class="com.kodnest.bean.Organization" autowire="constructor"> 
+  	<constructor-arg  name="oname" value="Kodnest"></constructor-arg>
+  	<constructor-arg  name="location" value="Bangalore"></constructor-arg>
+  </bean>
+</beans>

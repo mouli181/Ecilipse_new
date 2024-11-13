@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans
+  https://www.springframework.org/schema/beans/spring-beans.xsd">
+ 
+ <!--  <bean id="e1" class="com.kodnest.bean.Employee">
+  	<property name="technology" value="Java"></property>
+  	<property name="project" value="Website"></property>
+  	<property name="organization" value="Kodnest"></property>
+  </bean> -->
+  
+  <!-- <bean id="e2" class="com.kodnest.bean.Employee">
+  <constructor-arg name="technology" value="Java"></constructor-arg>
+  <constructor-arg name="Project" value="website"></constructor-arg>
+  	<constructor-arg name="organization" value="kodnest"></constructor-arg>
+  	
+  </bean> 
+  -->
+  <bean id="e1" class="com.kodnest.bean.Employee">
+  <property name="technologies">
+  <list>
+  <value>java</value>
+  <value>python</value>
+  </list>
+  </property>
+  <property name="projects">
+  <set>
+  <value>Spring</value>
+  <value>Dijango</value>
+  </set>
+  </property>
+  <property name="organizations">
+  <map>
+  <entry key="1" value="kodnest"></entry>
+  <entry key="2" value="tcs"></entry>
+  </map>
+ 
+  </property>
+  </bean>
+  
+     
+</beans> 
