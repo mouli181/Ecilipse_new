@@ -1,0 +1,11 @@
+# Ignore everything
+/*
+
+# But track the main project folder
+!/JtProject/
+
+# Include specific files within JtProject if needed
+/JtProject/*.java
+/JtProject/*.xml
+/JtProject/src/
+# Add other patterns as needed to include files
